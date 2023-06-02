@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+.imagen {
+  @apply rounded-full;
+}
+.p {
+  @apply text-start text-sm text-green;
+}
+.t1 {
+  @apply font-sans font-extrabold text-greendark text-right text-5xl m-10 bg-green;
+}
+.t2 {
+  @apply font-serif font-extrabold text-left text-greendark text-3xl m-1.5;
+}
+.t3 {
+  @apply font-serif font-extrabold text-right text-grey text-2xl m-8;
+}
+/**
+ * Use this file to import partials.
+ * Do not include SCSS code in this file.
+ */
+/**
+ * Import variables
+
+@import "variables"; */
+/**
+ * Import npm dependencies
+ * see: https://v2.parceljs.org/features/module-resolution/
+ * see commented examples below
+ */
+// @import "some-node-module";
+// @import "@some-company/some-node-module";
+/**
+ * Import layouts
+ * It's a best practice to use a different partial for each page
+ */
+@import "layouts/home";
+@import "npm:@fortawesome/fontawesome-free/css/all.css";
+/**
+ * Do NOT include anything else in this file!
+ */
+@tailwind utilities;
+.sombra {
+  @apply hover:shadow-lg hover:shadow-grey;
+}
+.grupo {
+  @apply flex flex-row flex-wrap;
+}
+.info {
+  @apply bg-grey text-green p-2 m-0.5;
+}

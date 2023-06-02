@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="/src/assets/images/favicon/chess.png"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./assets/styles/main.scss"
+        />
+        <!-- do not remove this line! -->
+        <title>ZARACHESS</title>
+    </head>
+    <body class="flex flex-col bg-green">
+        <div
+            class="grid grid-cols-6 grid-rows-7 p-8 mt-8 m-5 text-center bg-greendark h-auto max-w rounded-lg sm:flex-1 shadow-sm shadow-black"
+        >
+            <div class="row-start-1 col-start-2 row-span-7 col-span-6">
+                <img
+                    class="object-fill"
+                    src="./assets/images/fondo.jpg"
+                    alt="fondo ajedrez"
+                />
+            </div>
+            <div class="col-start-4 row-start-2 row-span-1 col-span-2">
+                <h1 class="t1">ZARACHESS</h1>
+            </div>
+
+            <div
+                class="row-start-1 row-span-1 col-start-4 col-span-2 md:col-start-1 xl:col-start-5"
+            >
+                <h1 class="t1">1er Torneo</h1>
+            </div>
+            <div class="bottom-2 right-2 absolute">
+                <a href="./inscripcion.html">
+                    <button
+                        class="btn bg-greendark transition-none duration-200 easy-in-out sombra"
+                    >
+                        <p class="p uppercase">Inscripciones</p>
+                    </button>
+                </a>
+            </div>
+
+            <div class="row-start-5 row-span-2 col-start-1 col-span-2">
+                <p class="p">
+                    1 de Junio<br />
+                    Casa de la juventud
+                </p>
+            </div>
+            <div class="row-start-4 row-span-1 col-start-1 col-span-1">
+                <a href="./componentes.html" alt="componentes">
+                    <img
+                        class="rounded-full sombra"
+                        src="./assets/images/Zarachess.png"
+                    />
+                </a>
+            </div>
+        </div>
+        <div>
+            <h2><a href="./actividades.html">Otras actividades</a></h2>
+            <p><a href="./migaleria.html">Galeria de fotos</a></p>
+        </div>
+        <include src="./views/footer.html"></include>
+        <script type="module" src="./assets/scripts/main.js"></script>
+        <!-- do not remove this line! -->
+    </body>
+</html>
